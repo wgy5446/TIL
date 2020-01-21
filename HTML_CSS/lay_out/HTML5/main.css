@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import url("./normalize.css");
+
+/*  */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+/*  */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container{
+background: #ffffff;
+height: 100vh;
+
+}
+.header, .visual, .main, .slogan, .footer{
+width: 940px;
+margin: 0 auto;
+/* margin: 0 auto; */
+}
+.header{
+background-color: darkcyan;
+position: relative;
+padding: 0 30px;
+}
+.logo{
+    position: absolute;
+    top: 45px;
+    left: 65px;
+    margin: 0;
+}
+.member{
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 2px 0;
+    position: relative;
+    right: -10px;
+    font-size: 0;
+}
+.member li, .member a{
+    display: inline-block;
+}
+.member li{
+    font-size: 16px;
+}
+.member li 
+.visual{
+background-color: yellowgreen;
+height: 10vh;
+}
+
+.main{
+background-color: blue;
+height: 60vh;
+padding: 30px 15px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+/* .group{
+height: 60vh;
+float: left;
+margin: 0 15px;
+} */
+
+.group1{
+background-color: tomato;
+width: 250px;
+}
+
+.group2{
+background-color: violet;
+width: 380px;
+}
+
+.group3 {
+    background-color: red;
+    width: 190px;
+}
+
+.slogan {
+    background-color: orange;
+    height: 10vh;
+}
+
+.footer-bg {
+    background-color: purple;
+    display: flex;
+}
+
+.footer {
+    background-color: green;
+    height: 10vh;
+}
