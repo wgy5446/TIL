@@ -1,61 +1,180 @@
-@charset "UTF-8";
+@charset "utf-8";
 @import url(./normalize.css);
-
 /*  */
 *::before, *::after{
     box-sizing: border-box;
 }
-
+/*  */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 숨김 콘텐츠 */
+.a11y-hidden{
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.4rem;
+    color: #181818;
+    background-color: #fff;
+}
 .container{
-background-color: silver;
+background-color: yellow;
 height: 100vh;
+
 }
 .header, .visual, .main, .slogan, .footer{
     width: 940px;
     margin: 0 auto;
 }
 .header{
-background-color: yellow;
-height: 10vh;
+background-color: #ffff;
+position: relative;
+}
+/* 로고 */
+.logo{
+    position: absolute;
+    margin: 0;
+    top: 45xp;
+    left: 62px;
+}
+/* 멤버 링크 */
+.member{
+    margin: 0;
+    padding: 2px 0;
+    text-align: right;
+    list-style-type: none;
+    position: relative;
+    font-size: 0;
+    right: -10px;
+}
+.member li, .member a{
+    display: inline-block;
+}
+.member li{
+    font-size: 1.4rem;
+}
+.member li:nth-child(n+2)::before{
+    content: ":";
+    margin: 0 2px;
+}
+.member a{
+    /* background-color: green; */
+    text-transform: uppercase;
+    padding: 8px 10px;
+}
+/* 메인 메뉴 */
+.navigation{
+    background-color: aqua;
+    padding-bottom: 50px ;
+}
+.menu{
+    list-style: none;
+    padding-left: 229px;
+    height: 47px;
+    margin: 0;
+    border-top: 2px solid #000;
 }
 .visual{
-background-color: yellowgreen;
+background-color: tomato;
 height: 10vh;
 }
 .main{
-background-color: tomato;
+background-color: violet;
 height: 60vh;
 display: flex;
-flex-direction: row;
-justify-content: space-around;
-padding: 30px 15px;
 flex-flow: row wrap;
-box-sizing: border-box;
+justify-content: space-around;
+padding: 30px 0;
+
 }
 .group1{
-background-color: violet;
+background-color: #fff;
 width: 250px;
 }
 .group2{
-background-color: teal;
+background-color: chocolate;
 width: 380px;
 }
+
 .group3{
-background-color: skyblue;
+background-color: cyan;
 width: 190px;
 }
+/* 유효성 검사 배너 */
+.validation-list{
+    margin: 25px 0 0 0;
+    list-style: none;
+    padding-left: 0;
+}
+.validation-list a{
+    display: flex;
+border: 1px solid #aaa;
+border-radius: 35px;
+padding:7px 10px 8px 45px;
+margin-top: 10px;
+background: url(./images/validation_icon.png) no-repeat 20px 50%, #ccc
+linear-gradient(180deg, #bbb, #eee );
+}
+.term{
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    background:#ccc linear-gradient(180deg, #bbb, #eee);
+}
+.term-heading{
+    margin: 0;
+    font-size: 1.6rem;
+}
+.term-list{
+    margin:15px 0 0 0 ;
+}
+.term-list div{
+  margin-top: 15px;  
+}
+.term-list dd{
+    margin-left: 0;
+}
+.term-list-subject, .term-list-brief{
+    float: right;
+    width: 145px;
+}
+.term-list-subject{
+    color: #296897;
+    font-weight: 400;
+}
+.term-list-thumbnail{
+    float: left;
+}
+.term-list-thumbnail img{
+    vertical-align: top;
+}
+.term-list-brief{
+    margin-top: 5px;
+    line-height: 1.6;
+}
 .slogan{
-background-color: red;
+background-color: brown;
 height: 10vh;
 }
+
 .footer-bg{
 background-color: purple;
-/* display: flex;
-flex-direction: row;
-justify-content: center; */
-
 }
 .footer{
-background-color: green;
+background-color: pink;
 height: 10vh;
 }
