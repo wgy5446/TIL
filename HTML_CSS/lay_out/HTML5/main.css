@@ -201,10 +201,11 @@ width: 190px;
 /* 공지사항 */
 .board{
     background-color: #fff;
-    padding-top: 45px;
     position: relative;
+    padding-top: 45px;
+    width: 380px;
 }
-.notice-list, .notice-more, .pds-list, .pds-list{
+.notice-list, .notice-more, .pds-list, .pds-more{
     display: none;
 }
 .board-act .notice-list, .board-act .notice-more,
@@ -212,23 +213,27 @@ width: 190px;
     display: block !important;
 }
 .tab{
+    /* 마진 값 */
     position: absolute;
     top: 0;
-    margin: 0;
     font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
 }
 .tab a{
+    /* 블록요소, 패딩값 */
     display: block;
     padding: 8px 10px;
     border: 1px solid #aaa;
     border-radius: 5px 5px 0 0;
+    /* 색깔 */
     color: #888;
     background:#ccc linear-gradient(180deg, #bbb, #eee);
 }
-.border-act .tab a{
-    color: #ed552f;
-    background: #fff;
+.board-act .tab a{
+    color:#ed552f ;
     border-color:#ed552f #ed552f #fff #ed552f;
+    background: #fff;
 }
 .notice-heading{
     left: 0;
@@ -237,24 +242,89 @@ width: 190px;
     left: 73px;
 }
 .notice-list, .pds-list{
-    margin: 0;
-    padding-left: 0;
     list-style: none;
+    padding-left: 0;
+    /* 마진 값 */
+    margin: 0;
 }
 .notice-list li, .pds-list li{
-    margin-bottom: 8px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: space-between;
+    margin-bottom:8px ;
 }
-.notice-list time, .pad-list time{
-
+.notice-list a, .pds-list a{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-grow: 1;
 }
 .notice-more, .pds-more{
     position: absolute;
     top: -8px;
     right: -8px;
     padding: 8px;
+}
+.notice-more .icon-plus, .pds-more .icon-plus{
+    color: hsla(110,50%,30%,1);
+}
+/* 새소식 */
+.news{
+    position: relative;
+}
+.news::before{
+    content: "";
+    position: absolute;
+    background: #ccc linear-gradient(90deg, #bbb, #eee);
+    width: 80%;
+    height: 1px;
+    top: 35px;
+    left: 0;
+}
+.news-heading{
+    color: #ed552f;
+    font-size: 1.5rem;
+    margin: 0 0 35px 0;
+   
+}
+.news-link{
+    display: block;
+}
+.news-item{
+padding-left:125px ;
+position: relative;
+/* min-height: 100px; */
+}
+.news-item-subject{
+    margin: 0 0 5px 0;
+    font-size: 1.4rem;
+    font-size: 400;
+}
+.news-item-brief{
+    margin-top:0 ;
+    line-height: 1.6;
+    font-weight: bold;
+}
+.news-item-thumbnail{
+margin: 0;
+position: absolute;
+top: 0;
+left: 0;
+text-align: center;
+}
+.news-item-thumbnail img{
+    box-shadow: 0 15px 20px 2px #aaa;
+    display: block;
+    margin-bottom: 15px;
+}
+.news-more{
+    position: absolute;
+    top:-8px;
+    right: -8px;
+    padding: 8px;
+}
+.news-more .icon-plus{
+    color: hsla(110, 50%, 30%, 1);
 }
 .slogan{
 background-color: brown;
