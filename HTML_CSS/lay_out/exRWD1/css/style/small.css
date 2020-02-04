@@ -1,0 +1,23 @@
+body{
+    font-size: 1.4rem;
+}
+.container{
+}
+.appHeader, .appMain, .appFooter{
+width: 100%;
+}
+.appMain{
+    min-height: 70vh;
+}
+.appNavigation{
+    /* float: left; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translate(-50%);
+}
+.book, .news, .board, .favorite, .twitter{
+    /* width: 100%; */
+    height: 20vh;
+}

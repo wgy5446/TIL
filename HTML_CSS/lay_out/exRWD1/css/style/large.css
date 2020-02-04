@@ -1,0 +1,43 @@
+body{
+    background-color: skyblue;
+    font-size: 1.6rem;
+}
+.container{
+    /* justify-content: center; */
+}
+.appHeader, .appMain{
+    width: 1000px;
+    margin: 0 auto;
+}
+.appNavigation, .appFooter{
+    width: 100%;
+}
+.appMain{
+    /* justify-content: space-between; */
+}
+.book{
+    width: 320px;
+    float: left;
+    height: 300px;
+}
+.news{
+    width: 660px;
+    float: right;
+    height: 300px;
+}
+.board{
+    width: 320px;
+    float: left;
+    height: 220px;
+}
+.favorite{
+    width: 220px;
+    height: 220px;
+    float: right;
+    /* order: 1; */
+}
+.twitter{
+    width: 420px;
+    float: left;
+    height: 220px;
+}

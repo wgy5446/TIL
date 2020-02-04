@@ -1,0 +1,16 @@
+/* 공통스타일 */
+/* 박스모델 초기화 */
+body, body *, body *::before, body *::after{
+    box-sizing: border-box;
+}
+/* 공통 레이아웃 */
+/* .container, .appMain{
+    display: flex;
+    flex-flow: row wrap;
+} */
+/* 박스 제어 장치 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
