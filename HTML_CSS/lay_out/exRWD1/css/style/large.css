@@ -3,41 +3,95 @@ body{
     font-size: 1.6rem;
 }
 .container{
-    /* justify-content: center; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 .appHeader, .appMain{
-    width: 1000px;
-    margin: 0 auto;
+width: 1000px;
 }
 .appNavigation, .appFooter{
     width: 100%;
+    }
+.appHeader{
+    height: 85px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
+/* 브랜드 */
+.brand{
+    margin: 0;
+    justify-content: center;
+}
+.brand a{
+    display: block;
+}
+/* 메바 */
+.memberOnly{
+    display: flex;
+    flex-flow: row nowrap; 
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;   
+}
+.memberOnly li{
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    background-color: tomato;
+}
+.memberOnly li:last-child{
+    margin-right: -0.715em;
+  }
+  .memberOnly a{
+    padding: 0.5em 0.715em;
+  }
+/* 검색폼 */
+fieldset{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.searchForm{
+    text-align: right;
+}
+input[name="search"]{
+    width: 400px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    height: 35px;
+    margin-right: 5px;
+    padding-left: 1em;
+    vertical-align: middle;
+}
+.buttonsearch{
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #988574;
+    color: #fff;
+    height: 35px;
+}
+
+
 .appMain{
-    /* justify-content: space-between; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 .book{
     width: 320px;
-    float: left;
-    height: 300px;
 }
 .news{
     width: 660px;
-    float: right;
-    height: 300px;
 }
 .board{
     width: 320px;
-    float: left;
-    height: 220px;
 }
 .favorite{
     width: 220px;
-    height: 220px;
-    float: right;
-    /* order: 1; */
+    order: 1;
 }
 .twitter{
     width: 420px;
-    float: left;
-    height: 220px;
 }
