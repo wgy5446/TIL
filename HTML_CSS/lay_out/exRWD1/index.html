@@ -29,7 +29,56 @@
                 </fieldset>
             </form>
         </header>
-        <nav class="appNavigation">네비</nav>
+        <nav class="appNavigation menu">
+            <h2 class="a11yHidden">메인메뉴</h2>
+            <button class="buttonNone buttonBurger" aria-label="메뉴 열기">
+                <span class="burgerBar round positionTop"></span>
+                <span class="burgerBar round positionMiddle"></span>
+                <span class="burgerBar round positionBottom"></span>
+            </button>
+            <ul class="menu__list resetList">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">HTML에 대해</a>
+                    <ul class="menu__subMenu">
+                        <li><a href="#">HTML5소개</a></li>
+                        <li><a href="#">래퍼런스 소개</a></li>
+                        <li><a href="#">활용 예제</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">CSS에 대해</a>
+                    <ul class="menu__subMenu">
+                        <li><a href="#">CSS소개</a></li>
+                        <li><a href="#">CSS2 VS CSS3</a></li>
+                        <li><a href="#">CSS 애니메이션</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">웹표준/웹접근성</a>
+                    <ul class="menu__subMenu">
+                        <li><a href="#">웹표준 이란?</a></li>
+                        <li><a href="#">웹접근성의 개요</a></li>
+                        <li><a href="#">HTML5의 현재와 미래</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">묻고 답하기</a>
+                    <ul class="menu__subMenu">
+                        <li><a href="#">묻고 답하기</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">1대1 질문</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">자료실</a>
+                    <ul class="menu__subMenu">
+                        <li><a href="#">공개 자료실</a></li>
+                        <li><a href="#">이미지 자료실</a></li>
+                        <li><a href="#">예제 자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         <main class="appMain clearfix">
             <section class="book">추천 서적</section>
             <section class="news">새소식</section>

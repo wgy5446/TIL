@@ -3,9 +3,9 @@ body{
     font-size: 1.6rem;
 }
 .container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
 }
 .appHeader, .appMain{
 width: 1000px;
@@ -14,15 +14,17 @@ width: 1000px;
     width: 100%;
     }
 .appHeader{
-    height: 85px;
     display: flex;
     flex-flow: column wrap;
+    height: 85px;
     justify-content: center;
 }
 /* 브랜드 */
 .brand{
-    margin: 0;
-    justify-content: center;
+   margin: 0;
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
 }
 .brand a{
     display: block;
@@ -30,16 +32,14 @@ width: 1000px;
 /* 메바 */
 .memberOnly{
     display: flex;
-    flex-flow: row nowrap; 
+    flex-flow: row nowrap;
     justify-content: flex-end;
     list-style: none;
-    margin: 0;   
+    margin: 0;
 }
 .memberOnly li{
-    padding: 5px 0;
-    display: flex;
     align-items: center;
-    background-color: tomato;
+    padding: 5px 0;
 }
 .memberOnly li:last-child{
     margin-right: -0.715em;
@@ -72,8 +72,20 @@ input[name="search"]{
     color: #fff;
     height: 35px;
 }
-
-
+/* 네비게이션 */
+.appNavigation{
+display: flex;
+justify-content: center;
+}
+.menu__list{
+    width: 1000px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.buttonNone{
+    display: none;
+}
 .appMain{
     display: flex;
     flex-flow: row wrap;
