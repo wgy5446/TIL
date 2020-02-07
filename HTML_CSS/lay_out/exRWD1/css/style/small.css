@@ -13,6 +13,7 @@ display: flex;
 flex-flow: row wrap;
 background: #38302e;
 padding-bottom: 1em;
+position: relative;
 }
 .brand, .memberOnly, .searchForm{
     width: 100%;
@@ -53,7 +54,6 @@ fieldset {
     margin: 0;
 }
 input[name="search"]{
-    background-color: lightcoral;
     border:1px solid #aaa ;
     border-radius: 5px;
     height: 35px;
@@ -86,19 +86,83 @@ input[name="search"]{
     background:url(./../../images/btn_search.png) ;
     background-size: contain;
 }
+/* 네비게이션 */
+.appNavigation{
+    position: relative;
+    /* top: 0;
+    left: -100;
+    width: 70vw;
+    height: 100vh;
+    transform: translate(0); */
+}
+/* 네비제어 장치 */
+.buttonBurger{
+    cursor: pointer;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+}
+.burgerBar{
+    width: 100%;
+    height: 20%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+}
+.round{
+    border-radius:20px ;
+}
+.buttonNone{
+    border: 0;
+    padding: 0;
+    background: transparent;
+}
+.positionTop{
+    top: 0;
+}
+.positionMiddle{
+top: 50%;
+transform: translate(-50px);
+}
+.positionBottom{
+    top: 100%;
+    transform: translateY(-100%);
+}
+/* .menu--isAct 클래스가 버튼의 부모요소에 추가 되었을 때 */
+.menu--isAct .positionTop{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    }
+    .menu--isAct .positionMiddle{
+    
+    transform: translate(-105%, -50%);
+    
+    }
+    .menu--isAct .positionBottom{
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    }
+.menu__list{
+    display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100vh;
+        transform: translate(-100%);
+        background: hsla(0, 0%, 0%, 0.75);
+        color: #fff;
+        padding: 2rem;
+}
 .appMain{
     display: flex;
     flex-flow: row wrap;
     min-height: 70vh;
 }
-.appNavigation{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 70vh;
-    height: 100vh;
-    transform: translate(-100%);
-}
+
 .book, .news, .board, .favorite, .twitter{
     width: 100%;
 }

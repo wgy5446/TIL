@@ -72,20 +72,75 @@ input[name="search"]{
     color: #fff;
     height: 35px;
 }
-/* 네비게이션 */
-.appNavigation{
+/* 네비게이션 flex 속성*/
+.menu{
+    background: #988574;
 display: flex;
 justify-content: center;
+padding: 3rem 0;
 }
 .menu__list{
+    margin: 0;
     width: 1000px;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-around;
+    list-style: none;
+}
+.menu__item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.menu__link{
+    font-size: 1.8rem;
+    cursor: default;
+    color: #fff;
+    font-weight:bold;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000 ;
+}
+.menu__subMenu li{
+margin-top: 1.5rem;
 }
 .buttonNone{
     display: none;
 }
+/* 네비게이션 float 속성 */
+/* .appNavigation{
+padding: 2em 0;
+background: #988574;
+}
+.buttonNone{
+    display: none;
+}
+.menu__list{
+width: 1000px;
+margin: 0 auto;
+list-style: none;
+padding-left: 0;
+color: #fff;
+}
+.menu__list::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.menu__item{
+    float: left;
+    margin: 0 25px
+}
+.menu__link{
+    font-size: 1.05em;
+    font-weight: 900;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+}
+.menu__subMenu{
+font-size: 1.05em;
+font-weight: 700;
+margin-top: 1.5em;
+}
+.menu__subMenu li{
+    margin-top: 1em;
+} */
 .appMain{
     display: flex;
     flex-flow: row wrap;

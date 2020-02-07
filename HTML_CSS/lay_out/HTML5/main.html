@@ -140,26 +140,83 @@
                     </section>
                 </div>
                 <section class="news">
-                    <h2 class="news-heading"></h2>
+                    <h2 class="news-heading">새소식</h2>
                     <a href="#" class="news-link">
                         <article class="news-item">
                             <h3 class="news-item-subject">W3C 사이트가 리뉴얼 되었습니다.</h3>
                             <time class="news-item-date" datetime="2018-05-31">2018.05.31</time>
-                            <p>디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 기존보다 최신 정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어 있습니다.</p>
-                            <figure>
+                            <p class="news-item-brief">디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 기존보다 최신 정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어 있습니다.</p>
+                            <figure class="news-item-thumbnail">
                                 <img src="./images/news.gif" alt="">
                                 <figcaption>W3C 리뉴얼</figcaption>
                             </figure>
                         </article>
                     </a>
-                    <a href="#" class="news-more" target="_blank" title="새소식" ><span></span></a>
+                    <a href="#" class="news-more" target="_blank" title="새소식" ><span class="icon-plus"></span>더보기</a>
                 </section>
              </div>
-             <div class="group group3"></div>
+             <div class="group group3">
+                 <div class="gradient-box">
+                     <section class="event">
+                         <h2 class="event-heading">신규<span class="point-color">이벤트</span></h2>
+                         <div id="event-detail">
+                             <p class="event-thumbnail"><img src="./images/./free_gift.gif" alt=""></p>
+                             <p class="event-brief">웹표준 핵심 가이드북 2 출시! 선착순 500명 한정으로 증정.</p>
+                         </div>
+                         <div class="btn-event"><button class="btn-event-prve"></button>
+                        <button class="btn-event-next"></button></div>
+                     </section>
+                     <section class="related">
+                         <h2 class="related-heading">관련<span class="point-color">사이트</span></h2>
+                         <ul class="related-list" tabindex="0">
+                             <li><a href="#">패스트캠퍼스</a></li>
+                             <li><a href="#">W3C</a></li>
+                             <li><a href="#">CSS ZenGarden</a></li>
+                             <li><a href="#">웹접근성 연구소</a></li>
+                             <li><a href="#">Web standards</a></li>
+                         </ul>
+                     </section>
+                 </div>
+                 <section class="favorite gradient-box">
+                     <h2 class="favorite-heading">인기<span class="point-color">사이트</span></h2>
+                     <ol class="favorite-list">
+                         <li class="no1"><a href="#">W3C</a><em class="up">상승</em></li>
+                         <li class="no2"><a href="#">CSS Zen Garden</a><em class="down">하락</em></li>
+                         <li class="no3"><a href="#">MDN</a><em class="stop">멈춤</em></li>
+                         <li class="no4"><a href="#">Web Standards</a><em class="up">상승</em></li>
+                     </ol>
+                     <a href="#" class="favorite-more" title="인기 사이트" target="_blank"><span class="icon-plus"></span>더보기</a>
+                 </section>
+             </div>
          </main>
-         <article class="slogan">슬로건</article>
+         <article class="slogan">
+                 <h2 class="slogan-heading" title="웹카페에서 웹표준을"></h2>
+                 <p class="slogan-content"><q cite="http://w3.org/WAI">The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect.</q>Tim Berners - Lee , W3C Director and inventor of the World Wide Web</p>
+                 <footer class="a11y-hidden">
+                     출처 : W3C, http://w3.org/WAI/
+                 </footer>
+         </article>
          <div class="footer-bg">
-             <footer class="footer">푸터</footer>
+             <footer class="footer">
+                <a href="#" class="footer-logo"><img src="./images/logo.png" alt="web cafe"></a>
+                <ul class="guide-list">
+                    <li><a href="#">회사 소개</a></li>
+                    <li><a href="#">개인정보 보호정책</a></li>
+                    <li><a href="#">이메일주소 무단수집 거부</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">site map</a></li>
+                </ul>
+                <address class="address">
+                    <span>서울시 강남구 역상동 718-5</span>
+                    <span>전화:02-3429-5114</span>
+                    <span><a href="emailto:wgf5446@gamil.com">wgf5446@gamil.com</a></span>
+                </address>
+                <small class="copyright">
+                    <span>Copyright since © 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED.최신 표준인 HTML5를 사용하여 마크업 했습니다. </span>
+                </small>
+                <div class="badge"><img src="./images/./html5_logo.png" alt="최신표준인 HTML5를 사용하여 마크업 했습니다.">
+                <img src="./images/css3_logo.png" alt="최신기술인 css3를 활용하여 디자인 했습니다."></div>
+             </footer>
          </div>
      </div>
 </body>
